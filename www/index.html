@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+
+<style>
+    /* RESET */
+    body,html {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* RESET */
+    img {
+        width: auto;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 100%;
+        z-index: 1;
+        position: absolute;
+    }
+
+    label {
+        margin-left: 0.3rem;
+        margin-right: 0.3rem;
+    }
+
+    button {
+        position: relative;
+        z-index: 2;
+        font-size: 100%;
+        padding: 0.5rem;
+        margin: 20vh auto;
+        width: 100%;
+        text-transform: uppercase;
+        background-color: transparent;
+        border: 0;
+    }
+    button:hover {
+        color: #df7d69;
+        cursor: pointer;
+    }
+    @font-face {
+        font-family: silk_flower;
+        src: url("silk_flower.otf") format("opentype");
+    }
+    * {
+        font-family: silk_flower;
+        color: #d2607e;
+    }
+    body,html {
+        background-color: #F4BE9A;
+        color: #d2607e;
+        font-family: silk_flower;
+        font-size: 16vw;
+        position: relative;
+        width:100vw;
+        height:100vh;
+        overflow: hidden;
+    }
+
+</style>
+</head>
+<body>
+
+
+<button onClick="getImage()">GET FISH</button><br/>
+<script>
+    window.addEventListener('pywebviewready', function() {
+        var container = document.getElementById('pywebview-status')
+        console.log('@pywebview is ready', pywebview.api)
+    })
+
+    function showResponse(response) {
+        const fish = document.createElement('img');
+        fish.src = response.message;
+        document.body.appendChild(fish)
+    }
+
+    function getImage() {
+        pywebview.api.getImage().then(showResponse)
+
+    }
+
+</script>
+</body>
+</html>
