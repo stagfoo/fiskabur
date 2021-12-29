@@ -14,7 +14,7 @@ $ python3 build-mac.py py2app
 ```
 
 ## TODO
-- Close button doesnt work
+- Close button doesnt work (mac os)
 - include chumbucket install somehow
 
 
