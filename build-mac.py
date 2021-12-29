@@ -10,11 +10,11 @@ def tree(src):
 
 ENTRY_POINT = ['main.py']
 
-DATA_FILES = tree('www/dist')
+DATA_FILES = tree('www')
 OPTIONS = {
     'argv_emulation': False,
     'strip': True,
-    'iconfile': '',
+    'iconfile': 'assets/icon.icns',
     'includes': ['WebKit', 'Foundation', 'webview', 'pkg_resources.py2_warn']
 }
 
