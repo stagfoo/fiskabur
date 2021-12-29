@@ -1,0 +1,49 @@
+{
+    "files.exclude": {
+      "node_modules": true,
+      "npm": true,
+    },
+    "gitmoji.onlyUseAdditionalEmojis": true,
+    "gitmoji.additionalEmojis": [
+        {
+        "emoji": "🪴　feature ░",
+        "code": ":new:",
+        "description": "New feature",
+        },
+        {
+            "emoji": "🪲　bugfix ░",
+            "code": ":bug:",
+            "description": "Fix a bug — need I say more?",
+        },
+        {
+            "emoji": "✨　refactor ░",
+            "code": ":improve:",
+            "description": "Improve piece of code like refactoring.",
+        },
+        {
+            "emoji": "🧼　chore ░",
+            "code": ":soup:",
+            "description": "Anything documentation related.",
+        },
+                {
+            "emoji": "🎨　artwork ░",
+            "code": ":style:",
+            "description": "Anything style related.",
+        },
+        {
+            "emoji": "📚　docs ░",
+            "code": ":docs:",
+            "description": "Anything style related.",
+        },
+        {
+            "emoji": "💣　breaking ░",
+            "code": ":danger:",
+            "description": "Change that breaks previous versions.",
+        },
+        {
+            "emoji": "🚀　release ░",
+            "code": ":release:",
+            "description": "Release a new version.",
+        },
+    ]
+  }
