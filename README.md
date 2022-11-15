@@ -3,17 +3,18 @@ fiskabúr - pronouced (fish-ka-bush) is a basic template for running javascript 
 the code is tiny and easy to read and *seems* less resource intensive then electron
 
 
-## Run Example
+## Build
 
 ```bash
-$ python3 main.py
+pip install -r requirements.txt 
+python3 main.py
 ```
 
 # Why make this?
 - too many eletron apps kill computers, so im exploring alternatives
 - somethings a dead simple wrapper is all you need
 - it's KISS
-- nicer dependencies and simple system with python
+- nicer dependencies and (hopefully) simple system with python
 
 # Building
 Mac
@@ -38,4 +39,6 @@ $ generate-iconset assets/icon.png
 
 https://pngtoicon.com/
 https://pypi.org/project/generate-iconset/
+
+
 
