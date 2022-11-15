@@ -3,7 +3,7 @@ fiskabúr - pronouced (fish-ka-bush) is a basic template for running javascript 
 the code is tiny and easy to read and *seems* less resource intensive then electron
 
 
-## Build
+## Development
 
 ```bash
 pip install -r requirements.txt 
@@ -11,34 +11,40 @@ python3 main.py
 ```
 
 # Why make this?
-- too many eletron apps kill computers, so im exploring alternatives
-- somethings a dead simple wrapper is all you need
-- it's KISS
-- nicer dependencies and (hopefully) simple system with python
+- eletron is too heavy
+- the api is as big or little as you want it because its custom
+- common operation people need (open file, save file, save settings, camera) [coming soon]
 
 # Building
-Mac
+
+Window/Mac
+```bash
+pyinstaller main.py 
 ```
-$ python3 build-mac.py py2app
+
+Mac
+```bash
+python3 build-mac.py py2app
 ```
 
 ## TODO
-- Close button doesnt work (mac os)
-- include chumbucket install somehow
-- migrate to deathmark
+- include chumbucket somehow
+- common operation modules
 
 # Docs
 https://pywebview.flowrl.com/
 
 # Icons
 
+https://pngtoicon.com/
+https://pypi.org/project/generate-iconset/
+
 Size generator + Mac icns
 ```
 $ generate-iconset assets/icon.png
 ```
 
-https://pngtoicon.com/
-https://pypi.org/project/generate-iconset/
+
 
 
 
